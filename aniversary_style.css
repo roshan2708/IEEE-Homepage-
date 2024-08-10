@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: url("https://assets-global.website-files.com/5a9ee6416e90d20001b20038/64f5c41d17f515e82dd8ec82_Rectangle%20(20).svg");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:2% 2%;
+    justify-content:space-between;
+    align-items:center;
+}
+/*logo*/
+nav img{
+    width:150px
+}
+
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+/*menu bar*/
+.nav-links ul li {
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li {
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+/*top left hover krne ke waste*/
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+/*heading*/
+.text-box-a h1{
+    font-size:64px;
+    color: black;
+    padding-left:2%;
+
+}
+pre{
+    margin-top: 14px;
+    font-size:18px;
+    color:blueviolet;
+    padding-left: 2%;
+}
+
+
+
+
+
+nav .fa{
+    display: none;
+}
+
